@@ -2,6 +2,17 @@
 Prevent amators from copying and saving your website (does not protect against professionals haha!)
 
 
+********************************************************************************
+## Status
+
+
+[![JS gzip size](https://img.badgesize.io/the-muda-organization/disable-keys/master/1.0.0/disable-keys.min.js?compression=gzip&label=JS+gzip+size)](https://github.com/the-muda-organization/disable-keys/blob/master/1.0.0/disable-keys.min.js)
+
+[![License Code](https://poser.pugx.org/the-muda-organization/disable-keys/license)](https://packagist.org/packages/the-muda-organization/disable-keys)
+
+
+## [View Preview](https://rawcdn.githack.com/the-muda-organization/disable-keys/a165a2650e771d81d074019f216fbd1674a50326/DEMO.html)
+
 
 ********************************************************************************
 ## Table of contents
@@ -18,7 +29,7 @@ Prevent amators from copying and saving your website (does not protect against p
 
 ********************************************************************************
 ## Bugs and feature requests
-Have a bug or a feature request? Before opening a new issue search for existing and closed issues. If your problem or idea is not addressed yet, [open a new issue](https://github.com/the-muda-organization/nanobar/issues/new).
+Have a bug or a feature request? Before opening a new issue search for existing and closed issues. If your problem or idea is not addressed yet, [open a new issue](https://github.com/the-muda-organization/disable-keys/issues/new).
 
 
 ********************************************************************************
