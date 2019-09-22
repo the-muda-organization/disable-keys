@@ -1,0 +1,143 @@
+<!--
+ *  Disable Keys
+ *  v1.0.0
+ *  https://github.com/the-muda-organization/disable-keys
+ *  The Unlicense
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Disable Keys</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+</head>
+<body class="py-5" style="background:#222 url(https://i.imgur.com/99r3MBm.jpg) center/cover no-repeat fixed">
+
+
+<main class="container-fluid">
+    <div class="row justify-content-center">
+        <div class="col-lg-5">
+            <div class="card text-justify border-dark shadow">
+                <header class="card-header bg-success text-light text-center">
+                    <h1 class="h3 m-0">Disable Keys</h1>
+                </header>
+                
+                <!--HOW TO USE-->
+                <div class="card-body">
+                    <p class="card-text">Prevent amators from copying and saving your website (does not protect against professionals haha!)</p>
+                    <div class="h5"><i class="fas fa-lg fa-fw fa-info-circle mr-3"></i>How to use?</div>
+                    <p class="card-text">Just add script yo your website!&emsp;<code>&lt;script&gt;Paste your code here&lt;/script&gt;</code></p>
+                    <hr>
+                    <div class="h5"><i class="fas fa-lg fa-fw fa-list mr-3"></i>Features:</div>
+                    <p>Script disables the following key combinations:</p>
+                    <ul class="m-0">
+                        <li>Mouse Right-Click</li>
+                        <li class="mb-1"><kbd>CTRL</kbd> + <kbd>A</kbd> - Select all</li>
+                        <li class="mb-1"><kbd>CTRL</kbd> + <kbd>C</kbd> - Copy</li>
+                        <li class="mb-1"><kbd>CTRL</kbd> + <kbd>P</kbd> - Print</li>
+                        <li class="mb-1"><kbd>CTRL</kbd> + <kbd>S</kbd> - Save</li>
+                        <li class="mb-1"><kbd>CTRL</kbd> + <kbd>U</kbd> - Open Source Code</li>
+                        <li class="mb-1"><kbd>CTRL</kbd> + <kbd>X</kbd> - Cut</li>
+                        <li class="mb-1"><kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>I</kbd> - Developer Tools</li>
+                        <li class="mb-1"><kbd>CTRL</kbd> + <kbd>Shift</kbd> + <kbd>J</kbd> - Developer Tools</li>
+                        <li class="mb-1"><kbd>F12</kbd> - Developer Tools</li>
+                        <li>CSS <code>user-select:none</code></li>
+                    </ul>
+                </div>
+                
+                <footer class="card-footer d-flex justify-content-between">
+                    <div>Code released under the <a href="https://github.com/the-muda-organization/disable-keys/blob/master/UNLICENSE" target="_blank">The Unlicense</a>.</div>
+                    <div><a class="text-dark" href="https://github.com/the-muda-organization/disable-keys" target="_blank"><i class="fab fa-lg fa-github"></i></a></div>
+                </footer>
+            </div>
+        </div>
+    </div>
+</main>
+
+
+<script>
+(function(){
+    
+    /***************************************************************************
+     *                              CSS
+     ***************************************************************************/
+    document.body.style.WebkitUserSelect = 'none';
+    document.body.style.MozUserSelect    = 'none';
+    document.body.style.MsUserSelect     = 'none';
+    document.body.style.userSelect       = 'none';
+    
+    
+    
+    /***************************************************************************
+     *                              FUNCTIONS
+     ***************************************************************************/
+    function disableEvent(e){
+        if(e.stopPropagation){
+            e.stopPropagation();
+        }else if(window.event){
+            window.event.cancelBubble = true;
+        }
+        e.preventDefault();
+        return false;
+    }
+    
+    /***************************************************************************
+     *                              EVENT LISTENERS
+     ***************************************************************************/
+    
+    //Mouse Right Click
+    document.addEventListener('contextmenu',function(e){
+        e.preventDefault();
+    });
+    
+    //Keyboard Keys
+    document.addEventListener('keydown',function(e){
+        
+        //CTRL
+        if(e.ctrlKey){
+            switch(e.code){
+                
+                case 'KeyA':
+                case 'KeyC':
+                case 'KeyP':
+                case 'KeyS':
+                case 'KeyU':
+                case 'KeyX':
+                    disableEvent(e);
+                    break;
+            }
+        }
+        
+        //CTRL + SHIFT
+        if(e.ctrlKey && e.shiftKey){
+            switch(e.code){
+                
+                case 'KeyI':
+                case 'KeyJ':
+                    disableEvent(e);
+                    break;
+            }
+        }
+        
+        //KEYS
+        switch(e.code){
+            
+            case 'F12':
+                disableEvent(e);
+                break;
+                
+        }
+    });
+    
+    
+})();
+</script>
+
+
+<script async src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/js/all.min.js"></script>
+
+</body>
+</html>
