@@ -6,12 +6,19 @@ Prevent amators from copying and saving your website (does not protect against p
 ## Status
 
 
-[![JS gzip size](https://img.badgesize.io/the-muda-organization/disable-keys/master/1.0.0/disable-keys.min.js?compression=gzip&label=JS+gzip+size)](https://github.com/the-muda-organization/disable-keys/blob/master/1.0.0/disable-keys.min.js)
+[![GitHub Version](https://img.shields.io/github/release/the-muda-organization/disable-keys.svg?style=for-the-badge)](https://github.com/the-muda-organization/disable-keys)
+[![License](https://img.shields.io/github/license/the-muda-organization/disable-keys.svg?style=for-the-badge)](https://github.com/the-muda-organization/disable-keys)
 
-![GitHub](https://img.shields.io/github/license/the-muda-organization/disable-keys)
+
+[![Github Star](https://img.shields.io/github/stars/the-muda-organization/disable-keys.svg?style=for-the-badge)](https://github.com/the-muda-organization/disable-keys)
+[![Github Fork](https://img.shields.io/github/forks/the-muda-organization/disable-keys.svg?style=for-the-badge)](https://github.com/the-muda-organization/disable-keys)
+
+[![JS gzip size](https://img.badgesize.io/the-muda-organization/disable-keys/master/dist/yt-lazyload.min.js?compression=gzip&label=JS+gzip+size)](https://github.com/the-muda-organization/disable-keys/blob/master/dist/disable-keys.min.js)
 
 
+********************************************************************************
 ## [View Preview](https://rawcdn.githack.com/the-muda-organization/disable-keys/a165a2650e771d81d074019f216fbd1674a50326/DEMO.html)
+
 
 
 ********************************************************************************
