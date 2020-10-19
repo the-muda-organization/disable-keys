@@ -13,7 +13,7 @@ Prevent amators from copying and saving your website (does not protect against p
 [![Github Star](https://img.shields.io/github/stars/the-muda-organization/disable-keys.svg?style=for-the-badge)](https://github.com/the-muda-organization/disable-keys)
 [![Github Fork](https://img.shields.io/github/forks/the-muda-organization/disable-keys.svg?style=for-the-badge)](https://github.com/the-muda-organization/disable-keys)
 
-[![JS gzip size](https://img.badgesize.io/the-muda-organization/disable-keys/master/dist/yt-lazyload.min.js?compression=gzip&label=JS+gzip+size)](https://github.com/the-muda-organization/disable-keys/blob/master/dist/disable-keys.min.js)
+[![JS gzip size](https://img.badgesize.io/the-muda-organization/disable-keys/master/dist/disable-keys.min.js?compression=gzip&label=JS+gzip+size)](https://github.com/the-muda-organization/disable-keys/blob/master/dist/disable-keys.min.js)
 
 
 ********************************************************************************
